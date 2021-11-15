@@ -45,10 +45,11 @@ public class LGDropDown {
 		//count and assign into int variable
 		  int count= dropdowncount.size();
 			System.out.println("The number of options in this dropdown are:"+count);
-				//sendKeys doubt 
-		//disabled dropdown		
-     // WebElement ele= driver.findElement(By.cssSelector("div#contentblock>section>div:nth-of-type(6)>select>option:nth-of-type(3)"));
-      //ele.isEnabled();
-     
+				
+			//selecting Loadrunner using sendKeys
+		WebElement dropdown4= driver.findElement(By.cssSelector("div#contentblock>section>div:nth-of-type(5)>select"));
+		dropdown4.sendKeys("Loadrunner");
+			
+		
 		}
 }
